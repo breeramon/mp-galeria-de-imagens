@@ -9,13 +9,13 @@ function loadImages() {
     const pageImages = images.slice(currentImageIndex, currentImageIndex + imagesPerPage);
     console.log(pageImages);
 
-    pageImages.forEach(images => {
+    pageImages.forEach(image => {
         const galleryItem = document.createElement('div');
-        galleryItem.className = `gallery-item ${images.wide ? 'wide' : ''}`;
+        galleryItem.className = `gallery-item ${image.wide ? 'wide' : ''}`;
 
         const imgItem = document.createElement('img');
-        imgItem.src = images.src;
-        imgItem.alt = images.alt;
+        imgItem.src = image.src;
+        imgItem.alt = image.alt;
 
         galleryItem.appendChild(imgItem);
         galleryContainer.appendChild(galleryItem);
