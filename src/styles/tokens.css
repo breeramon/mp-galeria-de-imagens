@@ -1,0 +1,11 @@
+:root {
+  --bg: #000;
+  --text: #fff;
+  --text-muted: rgba(255, 255, 255, 0.65);
+  --accent: #fff;
+  --overlay: rgba(0, 0, 0, 0.55);
+  --navbar-width: 260px;
+  --gap: 12px;
+  --radius: 4px;
+  --transition: 0.35s ease;
+}
